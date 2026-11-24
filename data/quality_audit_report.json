@@ -1,0 +1,38 @@
+{
+    "run_at": "2026-11-24T21:53:01.870257",
+    "schema_mode": "fleet_telemetry",
+    "detected_columns": {
+        "id_columns": [
+            "transaction_id",
+            "vehicle_id"
+        ],
+        "date_columns": [
+            "timestamp"
+        ],
+        "numeric_columns": [
+            "distance_km",
+            "amount"
+        ],
+        "lookup_relationships": []
+    },
+    "performance": {
+        "elapsed_seconds": 0.64,
+        "throughput_rows_per_sec": 156250
+    },
+    "row_summary": {
+        "initial_rows": 100000,
+        "clean_rows": 92490,
+        "total_dropped": 7510,
+        "retention_rate_pct": 92.49
+    },
+    "dropped_breakdown": {
+        "duplicates": 2446,
+        "null_dates_or_empty": 1950,
+        "invalid_values": 3114
+    },
+    "transformations": {
+        "cells_repaired_or_flagged": 1380,
+        "invalid_dates_preserved": 0,
+        "outliers_flagged_iqr": 6193
+    }
+}
