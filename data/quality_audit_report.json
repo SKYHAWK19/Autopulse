@@ -1,5 +1,5 @@
 {
-    "run_at": "2026-11-24T21:53:01.870257",
+    "run_at": "2026-11-24T22:54:25.605904",
     "schema_mode": "fleet_telemetry",
     "detected_columns": {
         "id_columns": [
@@ -16,23 +16,180 @@
         "lookup_relationships": []
     },
     "performance": {
-        "elapsed_seconds": 0.64,
-        "throughput_rows_per_sec": 156250
+        "elapsed_seconds": 11.26,
+        "throughput_rows_per_sec": 88809
     },
     "row_summary": {
-        "initial_rows": 100000,
-        "clean_rows": 92490,
-        "total_dropped": 7510,
-        "retention_rate_pct": 92.49
+        "initial_rows": 1000000,
+        "clean_rows": 941479,
+        "total_dropped": 58521,
+        "retention_rate_pct": 94.15
     },
     "dropped_breakdown": {
-        "duplicates": 2446,
-        "null_dates_or_empty": 1950,
-        "invalid_values": 3114
+        "duplicates": 19595,
+        "null_dates_or_empty": 19580,
+        "invalid_values": 19346
     },
     "transformations": {
-        "cells_repaired_or_flagged": 1380,
+        "cells_repaired_or_flagged": 28260,
         "invalid_dates_preserved": 0,
-        "outliers_flagged_iqr": 6193
+        "math_conflicts_flagged": 0,
+        "outliers_flagged_iqr": 53858
+    },
+    "dashboard": {
+        "mode": "fleet",
+        "kpis": {
+            "c1_label": "Total Fleet Spend",
+            "c1_val": "\u20b95,359,922,749.05",
+            "c2_label": "Total Distance",
+            "c2_val": "78,879,707.2 km",
+            "c3_label": "Avg Cost / km",
+            "c3_val": "\u20b967.95/km",
+            "c4_label": "Outliers Flagged",
+            "c4_val": "53,858",
+            "c5_label": "Clean Records",
+            "c5_val": "941,479"
+        },
+        "chart1": {
+            "title": "Monthly Expenditure (INR)",
+            "labels": [
+                "2025-01",
+                "2025-02",
+                "2025-03",
+                "2025-04",
+                "2025-05",
+                "2025-06",
+                "2025-07",
+                "2025-08",
+                "2025-09",
+                "2025-10",
+                "2025-11",
+                "2025-12",
+                "2026-01",
+                "2026-02",
+                "2026-03",
+                "2026-04",
+                "2026-05",
+                "2026-06"
+            ],
+            "values": [
+                293278364.71,
+                267711446.43,
+                312160610.1,
+                299482555.58,
+                310423250.24,
+                286515758.21,
+                304747374.17,
+                305070308.64,
+                300978157.88,
+                303979625.64,
+                295202621.31,
+                310948528.77,
+                304434271.05,
+                280199932.26,
+                303833956.47,
+                295888090.08,
+                304717361.04,
+                280350536.47
+            ]
+        },
+        "chart2": {
+            "title": "Spend by Category",
+            "labels": [
+                "FUEL",
+                "TOLL",
+                "MAINTENANCE",
+                "REFUND"
+            ],
+            "values": [
+                3220677807.01,
+                1447461997.09,
+                928202445.76,
+                -236419500.81
+            ]
+        },
+        "table_rows": [
+            {
+                "vehicle_id": 127,
+                "trips": 18845,
+                "dist": 1584235.7,
+                "spend": 113943166.6,
+                "cost_per_km": 71.92,
+                "outliers": 1153
+            },
+            {
+                "vehicle_id": 125,
+                "trips": 18813,
+                "dist": 1561288.7,
+                "spend": 110978931.08,
+                "cost_per_km": 71.08,
+                "outliers": 1101
+            },
+            {
+                "vehicle_id": 146,
+                "trips": 18865,
+                "dist": 1576543.1,
+                "spend": 111436856.54,
+                "cost_per_km": 70.68,
+                "outliers": 1060
+            },
+            {
+                "vehicle_id": 123,
+                "trips": 18841,
+                "dist": 1571889.0,
+                "spend": 110339063.77,
+                "cost_per_km": 70.2,
+                "outliers": 1043
+            },
+            {
+                "vehicle_id": 102,
+                "trips": 18634,
+                "dist": 1564672.1,
+                "spend": 109276399.28,
+                "cost_per_km": 69.84,
+                "outliers": 1095
+            },
+            {
+                "vehicle_id": 108,
+                "trips": 18620,
+                "dist": 1549472.4,
+                "spend": 108084711.1,
+                "cost_per_km": 69.76,
+                "outliers": 1036
+            },
+            {
+                "vehicle_id": 101,
+                "trips": 18632,
+                "dist": 1544615.5,
+                "spend": 107676071.24,
+                "cost_per_km": 69.71,
+                "outliers": 1057
+            },
+            {
+                "vehicle_id": 134,
+                "trips": 18718,
+                "dist": 1570306.1,
+                "spend": 109459277.87,
+                "cost_per_km": 69.71,
+                "outliers": 1106
+            },
+            {
+                "vehicle_id": 133,
+                "trips": 18820,
+                "dist": 1584049.4,
+                "spend": 110390523.32,
+                "cost_per_km": 69.69,
+                "outliers": 1047
+            },
+            {
+                "vehicle_id": 150,
+                "trips": 18839,
+                "dist": 1572772.1,
+                "spend": 109393198.37,
+                "cost_per_km": 69.55,
+                "outliers": 1091
+            }
+        ],
+        "preview": []
     }
 }
